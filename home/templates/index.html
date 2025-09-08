@@ -1,0 +1,407 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<!-- ============================
+        Slider
+    ============================== -->
+<section id="slider1" class="slider slider-1">
+  <div class="owl-carousel carousel-arrows" data-slider-id="slider1" data-dots="true" data-loop="true"
+    data-autoplay-hover-pause="true" data-autoplay="true" data-nav="true" data-transition="fade"
+    data-animate-out="fadeOut" data-animate-in="fadeIn">
+    <div class="slide-item align-v-h bg-overlay">
+      <div class="bg-img"><img src="{% static 'assets/images/sliders/1.jpg' %}" alt="slide img"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <div class="slide__content">
+              <h2 class="slide__title">Secure & Reliable Cargo Solutions!</h2>
+              <!-- <p class="slide__desc">Providing flexibile, improved service levels, and accelerated delivery.</p> -->
+              </a>
+            </div><!-- /.slide-content -->
+          </div><!-- /.col-lg-8 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.slide-item -->
+
+    <div class="slide-item align-v-h bg-overlay">
+      <div class="bg-img"><img src="{% static 'assets/images/sliders/hero_bg.jpg' %}" alt="slide img"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <div class="slide__content">
+              <h3 class="slide__title">Digital tracking <br> & shipment!</h3>
+              <!-- <p class="slide__desc">Providing flexibile, improved service levels, and accelerated delivery.</p> -->
+            </div><!-- /.slide-content -->
+          </div><!-- /.col-lg-8 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.slide-item -->
+    <div class="slide-item align-v-h bg-overlay">
+      <div class="bg-img"><img src="{% static 'assets/images/sliders/bg2.jpg' %}" alt="slide img"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <div class="slide__content">
+              <h2 class="slide__title"></h2>
+              <!-- <p class="slide__desc">Providing flexibile, improved service levels, and accelerated delivery.</p> -->
+            </div><!-- /.slide-content -->
+          </div><!-- /.col-lg-8 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.slide-item -->
+  </div><!-- /.carousel -->
+  <!-- /.container -->
+</section><!-- /.slider -->
+
+
+<!-- ========================
+        Services
+    =========================== -->
+<section id="services" class="services pt-50 bg-gray">
+  <div class="container">
+    <div class="row heading mb-40">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+      </div><!-- /.col-lg-12 -->
+      <div class="col-sm-12 col-md-6 col-lg-5">
+        <h3 class="heading__title">Our trucks are secure, intelligent and highly efficient.</h3>
+      </div><!-- /.col-lg-5 -->
+      <div class="col-sm-12 col-md-6 col-lg-6 offset-lg-1">
+        <p class="heading__desc">Our global logistics expertise, advanced supply chain technology &amp; customized
+          logistics solutions will help you analyze, develop and implement successful supply chain management
+          strategies.</p>
+      </div><!-- /.col-lg-6 -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="service-item">
+          <div class="service__img">
+            <img src="{% static 'assets/images/services/5.jpg' %}" alt="service" class="img-fluid">
+          </div><!-- /.service-img -->
+          <div class="service__overlay">
+            <div class="service__icon"><i class="icon-airplane"></i></div>
+            <h4 class="service__title">Secure Tracking</h4>
+            <p class="service__desc">We provide real-time tracking for all shipments, ensuring transparency and peace of mind.</p>
+
+          </div>
+        </div><!-- /.service-item -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="service-item">
+          <div class="service__img">
+            <img src="{% static 'assets/images/services/3.jpg' %}" alt="service" class="img-fluid">
+          </div><!-- /.service-img -->
+          <div class="service__overlay">
+            <div class="service__icon"><i class="icon-truck"></i></div>
+            <h4 class="service__title">Road Freight</h4>
+            <p class="service__desc">We offer reliable road freight services, ensuring timely delivery of your goods across the region.</p>
+          </div>
+        </div><!-- /.service-item -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="service-item">
+          <div class="service__img">
+            <img src="{% static 'assets/images/services/6.jpg' %}" alt="service" class="img-fluid">
+          </div><!-- /.service-img -->
+          <div class="service__overlay">
+            <div class="service__icon"><i class="icon-ship"></i></div>
+            <h4 class="service__title">Ware Housing</h4>
+            <p class="service__desc">Our warehouse is strategically <br>located to optimize logistics<br>and reduce transit times.</p>
+          </div>
+        </div><!-- /.service-item -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+    <div class="row">
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.Services -->
+
+
+<!-- =========================== 
+      fancybox Layout2
+    ============================= -->
+<section id="fancyboxLayout2" class="fancybox-layout2">
+  <div class="container">
+    <div class="row">
+      <div class="row heading mb-40">
+        <div class="col-sm-12 col-md-6 col-lg-5">
+          <h2 class="heading__title">You can count on us...</h2>
+        </div><!-- /.col-lg-5 -->
+        <div class="col-sm-12 col-md-6 col-lg-6 offset-lg-1">
+          <p class="heading__desc">Our logistics and supply chain technology &amp; customized logistics solutions will
+            help you analyze, develop and implement successful supply chain management strategies.
+          </p>
+        </div><!-- /.col-lg-6 -->
+      </div><!-- /.col-xl-4 -->
+    </div><!-- /.row -->
+    <div class="row">
+      <!-- fancybox item #1 -->
+
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="fancybox-item">
+          <div class="fancybox__icon">
+            <i class="icon-balance"></i>
+          </div><!-- /.fancybox-icon -->
+          <div class="fancybox__content">
+            <h4 class="fancybox__title">Security For Cargo</h4>
+            <p class="fancybox__desc">Our facilities meet high security requirements and are certified to the
+              highest local standards.</p>
+          </div><!-- /.fancybox-content -->
+        </div><!-- /.fancybox-item -->
+      </div><!-- /.col-lg-3 -->
+      <!-- fancybox item #2 -->
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="fancybox-item">
+          <div class="fancybox__icon">
+            <i class="icon-search-worldwide"></i>
+          </div><!-- /.fancybox-icon -->
+          <div class="fancybox__content">
+            <h4 class="fancybox__title">Real-Time Tracking</h4>
+            <p class="fancybox__desc">We ensure our customers’ supply chains are fully compliant by our
+              comprehensive practices and programs. </p>
+          </div><!-- /.fancybox-content -->
+        </div><!-- /.fancybox-item -->
+      </div><!-- /.col-lg-3 -->
+      <!-- fancybox item #3 -->
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="fancybox-item">
+          <div class="fancybox__icon">
+            <i class="icon-boxes"></i>
+          </div><!-- /.fancybox-icon -->
+          <div class="fancybox__content">
+            <h4 class="fancybox__title">Warehouse Storage</h4>
+            <p class="fancybox__desc">Depending on your product, needs and requirements, we provide professional
+              warehouse activities.</p>
+          </div><!-- /.fancybox-content -->
+        </div><!-- /.fancybox-item -->
+      </div><!-- /.col-lg-3 -->
+      <!-- fancybox item #4 -->
+
+      <!-- fancybox item #5 -->
+      <!-- /.col-lg-3 -->
+      <!-- fancybox item #6 -->
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="fancybox-item">
+          <div class="fancybox__icon">
+            <i class="icon-telephone-1"></i>
+          </div><!-- /.fancybox-icon -->
+          <div class="fancybox__content">
+            <h4 class="fancybox__title">24/7 Hours Support</h4>
+            <p class="fancybox__desc">We enhance our logistics operations by relieving you of the worries associated
+              with freight forwarding.</p>
+          </div><!-- /.fancybox-content -->
+        </div><!-- /.fancybox-item -->
+      </div><!-- /.col-lg-3 -->
+      <!-- fancybox item #7 -->
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="fancybox-item">
+          <div class="fancybox__icon">
+            <i class="icon-delivery-delay"></i>
+          </div><!-- /.fancybox-icon -->
+          <div class="fancybox__content">
+            <h4 class="fancybox__title">Fast &amp; Efficient Delivery</h4>
+            <p class="fancybox__desc">We enhance our logistics operations by relieving you of the worries associated
+              with freight forwarding.</p>
+          </div><!-- /.fancybox-content -->
+        </div><!-- /.fancybox-item -->
+      </div><!-- /.col-lg-3 -->
+      <!-- fancybox item #8 -->
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="fancybox-item">
+          <div class="fancybox__icon">
+            <i class="icon-credit-cards"></i>
+          </div><!-- /.fancybox-icon -->
+          <div class="fancybox__content">
+            <h4 class="fancybox__title">Transparent Pricing</h4>
+            <p class="fancybox__desc">The world of international supply chains involves a myriad of unknown risks and
+              challenging regulations.</p>
+          </div><!-- /.fancybox-content -->
+        </div><!-- /.fancybox-item -->
+      </div><!-- /.col-lg-3 -->
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <div class="fancybox-item fancybox-item-custom">
+          <div class="fancybox__icon">
+            <i class="icon-stamp"></i>
+          </div><!-- /.fancybox-icon -->
+        </div><!-- /.fancybox-item -->
+      </div><!-- /.col-lg-3 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.fancybox Layout2 -->
+
+
+<!-- =====================
+       Clients 1
+    ======================== -->
+<section id="clients1" class="clients clients-1">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <div class="carousel owl-carousel owl-loaded owl-drag" data-slide="6" data-slide-md="4" data-slide-sm="2"
+          data-autoplay="true" data-nav="false" data-dots="false" data-space="20" data-loop="true" data-speed="700">
+          <!-- /.client -->
+          <!-- /.client -->
+          <!-- /.client -->
+          <!-- /.client -->
+          <!-- /.client -->
+          <!-- /.client -->
+          <div class="owl-stage-outer">
+            <div class="owl-stage" style="transform: translate3d(-1424px, 0px, 0px); transition: 0.25s; width: 2850px;">
+              <div class="owl-item cloned" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/9.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/10.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/11.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/12.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/13.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/11.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/9.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/10.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/11.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item active" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/12.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item active" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/13.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item active" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/11.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item cloned active" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/9.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item cloned active" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/10.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item cloned active" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/11.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/12.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/13.png' %}" alt="client"></a>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 138.332px; margin-right: 20px;">
+                <div class="client">
+                  <a href="#"><img src="{% static 'assets/images/clients/11.png' %}" alt="client"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
+                aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span
+                aria-label="Next">›</span></button></div>
+          <div class="owl-dots disabled"></div>
+          <div class="owl-thumbs"></div>
+        </div><!-- /.carousel -->
+      </div><!-- /.col-lg-12 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.clients 1 -->
+
+
+<!-- ========================= 
+            cta 1
+    =========================  -->
+<section id="cta1" class="cta cta-1 border-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="contact-panel contact-panel-2">
+          <div class="contact__panel-header d-flex align-items-center">
+            <i class="icon-placeholder"></i>
+            <h4 class="contact__panel-title">Our Offices</h4>
+          </div>
+          <div id="accordion">
+            <div class="accordion-item">
+              <div class="accordion__item-header opened" data-toggle="collapse" data-target="#collapse1">
+                <a class="accordion__item-title" href="#">Lagos</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse1" class="collapse  show" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <ul class="contact__list list-unstyled">
+                    <li>002 010123456789</li>
+                    <li>Email: Gajjab@7oroof.com</li>
+                    <li>Address: 2307 Beverley Rd Brooklyn, NY</li>
+                    <li>Hours: Mon-Fri: 8am – 7pm</li>
+                  </ul>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+            <div class="accordion-item">
+              <div class="accordion__item-header" data-toggle="collapse" data-target="#collapse3">
+                <a class="accordion__item-title" href="#">Port Harcourt</a>
+              </div><!-- /.accordion-item-header -->
+              <div id="collapse3" class="collapse" data-parent="#accordion">
+                <div class="accordion__item-body">
+                  <ul class="contact__list list-unstyled">
+                    <li>002 010123456789</li>
+                    <li>Email: Gajjab@7oroof.com</li>
+                    <li>Address: 2307 Beverley Rd Brooklyn, NY</li>
+                    <li>Hours: Mon-Fri: 8am – 7pm</li>
+                  </ul>
+                </div><!-- /.accordion-item-body -->
+              </div>
+            </div><!-- /.accordion-item -->
+          </div>
+        </div><!-- /.contact-panel -->
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.cta1 -->
+
+
+{% endblock %}

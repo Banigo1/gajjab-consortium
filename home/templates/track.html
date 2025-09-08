@@ -1,0 +1,104 @@
+﻿
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+    <!-- ========================
+       page title 
+    =========================== -->
+    <section id="page-title" class="page-title bg-overlay bg-parallax">
+      <div class="bg-img"><img src="{% static 'assets/images/page-titles/7.jpg' %}" alt="background"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <h1 class="pagetitle__heading">Track & Trace Shipment</h1>
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.page-title -->
+
+    <!-- ======================
+       Track Shipmeent
+    ========================= -->
+    <section id="trackShipmeent" class="track-shipmeent">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-4">
+            <aside class="sidebar sidebar-layout2 mb-30">
+             
+              <div class="widget widget-help bg-theme">
+                <div class="widget__content">
+                  <h5>How Can <br> We Help You?</h5>
+                  <p>We believe in the power of simple and easy communication.</p>
+                  <a href="{% url 'contact' %}" class="btn btn__secondary btn__hover2"><i class="fa fa-envelope"></i>Contact Us</a>
+                </div><!-- /.widget-download -->
+              </div><!-- /.widget-help -->
+            </aside><!-- /.sidebar -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-sm-12 col-md-12 col-lg-8">
+            <form class="request-quote-form">
+              <div class="row mb-30">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <p class="fz-16 mb-45">Fill out the form below to track and trace your shipment.</p>
+                </div><!-- /.col-lg-12 -->
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="form-group mb-40">
+                    <label>Shipment Type</label>
+                    <div class="form-group form-group-select">
+                      <select class="form-control">
+                        <option>Type 1</option>
+                        <option>Type 2</option>
+                        <option>Type 3</option>
+                      </select>
+                    </div>
+                  </div>
+                </div><!-- /.col-lg-12 -->
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <div class="form-group">
+                    <label>Tracking Number</label>
+                    <div class="form-group">
+                      <textarea class="form-control" placeholder="You can enter up to a maximum of 10 airway bill numbers for tracking."></textarea>
+                    </div>
+                  </div>
+                </div><!-- /.col-lg-12 -->
+                <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap">
+                  <div class="form-group input-radio mr-30">
+                    <label class="label-radio">Air Freight
+                      <input type="radio" name="access" checked="">
+                      <span class="radio-indicator"></span>
+                    </label>
+                  </div>
+                  <div class="form-group input-radio mr-30">
+                    <label class="label-radio">Ocean Freight
+                      <input type="radio" name="access">
+                      <span class="radio-indicator"></span>
+                    </label>
+                  </div>
+                  <div class="form-group input-radio mr-30">
+                    <label class="label-radio">Road Freight
+                      <input type="radio" name="access">
+                      <span class="radio-indicator"></span>
+                    </label>
+                  </div>
+                  <div class="form-group input-radio">
+                    <label class="label-radio">Express Delivery
+                      <input type="radio" name="access">
+                      <span class="radio-indicator"></span>
+                    </label>
+                  </div>
+                </div><!-- /.col-lg-12 -->
+              </div><!-- /.row -->
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  <button type="submit" class="btn btn__secondary btn__block">Track & Trace</button>
+                </div><!-- /.col-lg-12 -->
+              </div><!-- /.row -->
+            </form>
+          </div><!-- /.col-lg-8 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Track Shipmeent -->
+
+{% endblock %}

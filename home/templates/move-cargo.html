@@ -1,0 +1,170 @@
+﻿{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+
+<!-- ========================
+       page title 
+    =========================== -->
+<section id="page-title" class="page-title bg-overlay bg-parallax">
+  <div class="bg-img"><img src="{% static 'assets/images/sliders/5.jpg' %}" alt="background"></div>
+  <div class="container">
+    <!-- <div class="row"> -->
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <h1 class="pagetitle__heading">Move Cargo</h1>
+    </div><!-- /.col-lg-12 -->
+  </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.page-title -->
+
+<!-- ======================
+       Request Quote
+    ========================= -->
+<section id="requestQuote" class="request-quote">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <aside class="sidebar sidebar-layout2 mt-30">
+          <div class="widget widget-categories widget-categories-2">
+            <div class="widget-content">
+              <ul class="list-unstyled">
+                <li><a >Cargo</a></li>
+                <li><a >Logistics</a></li>
+                <li><a >Supply Chain</a></li>
+                <li><a >Warehousing</a></li>
+                <li><a >Packaging</a></li>
+                <li><a >Route Optimization</a></li>
+              </ul>
+            </div><!-- /.widget-content -->
+          </div><!-- /.widget-categories -->
+
+          <div class="widget widget-help bg-theme">
+            <div class="widget__content">
+              <h5>How Can <br> We Help You!</h5>
+              <p>We understand the importance approaching each work integrally and believe in the power of simple
+                and easy communication.</p>
+              <a href="{% url 'contact' %}" class="btn btn__secondary btn__hover2"><i class="fa fa-envelope"></i>Contact Us</a>
+            </div><!-- /.widget-download -->
+          </div><!-- /.widget-help -->
+        </aside><!-- /.sidebar -->
+      </div><!-- /.col-lg-4 -->
+      <div class="col-sm-12 col-md-12 col-lg-8">
+        
+        <form method="post" action="{% url 'move_cargo' %}" class="request-quote-form">
+          {% csrf_token %}
+
+          <!-- Personal Data -->
+          <h5 class="form__title">Personal Data</h5>
+          <div class="divider__line divider__theme divider__sm mb-30"></div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Name" required>
+          </div>
+
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" placeholder="Email" required>
+          </div>
+
+          <div class="form-group">
+            <input type="tel" class="form-control" name="phone" placeholder="Phone">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="company" placeholder="Company">
+          </div>
+
+
+          <!-- Pickup Address -->
+
+          <h5 class="form__title">Pickup Address</h5>
+          <div class="divider__line divider__theme divider__sm mb-30"></div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="pickup_street" placeholder="Street">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="pickup_country" placeholder="Country">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="pickup_city" placeholder="City">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="pickup_zip" placeholder="Zip">
+          </div>
+
+          <!-- Drop-Off Address -->
+
+          <h5 class="form__title">Drop-Off Address</h5>
+          <div class="divider__line divider__theme divider__sm mb-30"></div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="drop_street" placeholder="Street">
+          </div>
+
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="drop_city" placeholder="City">
+          </div>
+
+
+          <!-- Item To Be Shipped -->
+
+          <h5 class="form__title">Item To Be Shipped</h5>
+          <div class="divider__line divider__theme divider__sm mb-30"></div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="total_weight" placeholder="Total Weight, lbs">
+          </div>
+
+          <div class="form-group">
+            <input type="number" class="form-control" name="qty" placeholder="QTY">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="length" placeholder="Length">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="width" placeholder="Width">
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" name="height" placeholder="Height">
+          </div>
+
+          <div class="form-group input-radio">
+            <label>
+              <input type="radio" name="stackable" value="stackable" checked>
+              Stackable
+            </label>
+          </div>
+          <div class="form-group input-radio">
+            <label>
+              <input type="radio" name="stackable" value="non_stackable">
+              Non-Stackable
+            </label>
+          </div>
+
+
+          <!-- Submit -->
+
+          <div class="form-group">
+            <button type="submit" class="btn btn__secondary btn__block">Send</button>
+          </div>
+          
+        </form>
+
+      </div><!-- /.col-lg-8 -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.Request Quote -->
+
+
+{% endblock %}
+
+{% block header_top_right %}{% endblock %}
