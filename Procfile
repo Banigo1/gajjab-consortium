@@ -1,0 +1,1 @@
+web: gunicorn gajjab_project.wsgi

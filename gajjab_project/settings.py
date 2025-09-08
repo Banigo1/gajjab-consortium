@@ -30,6 +30,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
+CSRF_TRUSTED_ORIGINS =['gajjab-consortium.up.railway.app', 'gajjabconsortium.com']
+
+ALLOWED_HOSTS = [ 'localhost', '127.0.0.1', 'gajjab-consortium.up.railway.app', 'gajjabconsortium.com']
+
+
 ALLOWED_HOSTS = []
 
 
