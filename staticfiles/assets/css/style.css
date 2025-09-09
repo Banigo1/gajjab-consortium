@@ -26,7 +26,7 @@ a:hover {
 }
 section {
   position: relative;
-  padding: 100px 0;
+  padding: 40px 0;
 }
 img {
   max-width: 100%;
@@ -820,6 +820,7 @@ h6 {
   font-size: 33px;
   line-height: 42px;
   margin-bottom: 20px;
+  text-transform: none;
 }
 .heading__desc {
   font-size: 16px;
@@ -849,15 +850,18 @@ h6 {
 .heading-3 .heading__title {
   font-size: 24px;
   line-height: 35px;
+  text-transform: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .heading__title {
     font-size: 30px;
     line-height: 40px;
+    text-transform: none; 
   }
   .heading-2 .heading__title {
     font-size: 35px;
     line-height: 44px;
+    text-transform: none;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 767px) {
@@ -1225,6 +1229,8 @@ textarea.form-control {
   font-size: 18px;
   line-height: 1;
   margin-bottom: 20px;
+  margin-top: 30px;
+
 }
 .form-group-select:after {
   content: "";
@@ -3492,6 +3498,7 @@ textarea.form-control {
 }
 .fancybox-layout3 .heading__title {
   line-height: 46px;
+  text-transform: none;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .fancybox-item .fancybox__icon {
@@ -3519,6 +3526,7 @@ textarea.form-control {
   }
   .fancybox-layout3 .heading__title {
     line-height: 35px;
+    text-transform: none;
   }
 }
 .project-item {
@@ -4131,7 +4139,7 @@ textarea.form-control {
   width: 100px;
   height: 72px;
   display: inline-block;
-  background-image: url(../images/testimonials/quote-icon.png);
+  background-image: url("{% static 'assets/images/testimonials/quote-icon.png' %}");
 }
 .testimonial-item .testimonial__rating {
   line-height: 1;
