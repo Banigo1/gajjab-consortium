@@ -31,13 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-CSRF_TRUSTED_ORIGINS =['www.gajjab-consortium.up.railway.app', 'www.gajjabconsortium.com']
+CSRF_TRUSTED_ORIGINS =['www.gajjabconsortium.com', 'webapp-2749320.pythonanywhere.com']
 
-ALLOWED_HOSTS = [
-                'gajjab-consortium.up.railway.app',
-                'localhost',
-                '127.0.0.1',
-]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.gajjabconsortium.com', 'webapp-2749320.pythonanywhere.com']
 
 
 # Application definition
