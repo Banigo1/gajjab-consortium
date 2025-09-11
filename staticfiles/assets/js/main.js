@@ -2,7 +2,7 @@
     Project Name: Gajjab Consortium
     Version: 1.2
     Author: Precious Banigo
-    Devloped by: Precous Banigo Banigoprecious@yahoo.com)
+    Devloped by: Precious Banigo banigoprecious@yahoo.com)
     Relase Date: November 2019
     Last Update: April 2020
 ---------------------------*/
