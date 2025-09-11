@@ -24,6 +24,9 @@ def features_view(request):
 def track_view(request):
     return render(request, 'track.html', context={'title': 'Track and Trace'})
 
+def track_widget(request):
+    return render(request, 'SecurityWidget.html.', context={'title': 'Dashboard'})
+
 def location_view(request):
     return render(request, 'location.html', context={'title': 'Location'})
 
@@ -31,14 +34,3 @@ def faq_view(request):
     return render(request, 'faqs.html', context={'title': 'FAQs'})
 
 
-def request_quote_view(request):
-    if request.method == "POST":
-        form = QuoteRequestForm(request.POST)
-        if form.is_valid():
-            data = form.cleaned_data
-            # process data (send email, log, etc.)
-            return HttpResponse("✅ Quote request received!")
-    else:
-        form = QuoteRequestForm()
-
-    return render(request, "contact.html", {"form": form})

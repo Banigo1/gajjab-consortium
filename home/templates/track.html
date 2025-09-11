@@ -48,9 +48,12 @@
                     <label>Shipment Type</label>
                     <div class="form-group form-group-select">
                       <select class="form-control">
-                        <option>Type 1</option>
-                        <option>Type 2</option>
-                        <option>Type 3</option>
+                        <option>Truck 1</option>
+                        <option>Truck 2</option>
+                        <option>Truck 3</option>
+                        <option>Truck 4</option>
+                        <option>Truck 5</option>
+                        <option>Truck 6</option>
                       </select>
                     </div>
                   </div>
@@ -59,40 +62,29 @@
                   <div class="form-group">
                     <label>Tracking Number</label>
                     <div class="form-group">
-                      <textarea class="form-control" placeholder="You can enter up to a maximum of 10 airway bill numbers for tracking."></textarea>
+                      <textarea class="form-control" placeholder="Enter your tracking number"></textarea>
                     </div>
                   </div>
                 </div><!-- /.col-lg-12 -->
                 <div class="col-sm-12 col-md-12 col-lg-12 d-flex flex-wrap">
                   <div class="form-group input-radio mr-30">
-                    <label class="label-radio">Air Freight
-                      <input type="radio" name="access" checked="">
-                      <span class="radio-indicator"></span>
-                    </label>
+                   
                   </div>
                   <div class="form-group input-radio mr-30">
-                    <label class="label-radio">Ocean Freight
-                      <input type="radio" name="access">
-                      <span class="radio-indicator"></span>
-                    </label>
+                 
+
                   </div>
                   <div class="form-group input-radio mr-30">
-                    <label class="label-radio">Road Freight
-                      <input type="radio" name="access">
-                      <span class="radio-indicator"></span>
-                    </label>
+                   
                   </div>
                   <div class="form-group input-radio">
-                    <label class="label-radio">Express Delivery
-                      <input type="radio" name="access">
-                      <span class="radio-indicator"></span>
-                    </label>
+                  
                   </div>
                 </div><!-- /.col-lg-12 -->
               </div><!-- /.row -->
               <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12">
-                  <button type="submit" class="btn btn__secondary btn__block">Track & Trace</button>
+                  <a href="{% url 'Security_Widget' %}" target="_blank" rel="noopener noreferrer" class="btn btn__secondary btn__block">Track & Trace</a>
                 </div><!-- /.col-lg-12 -->
               </div><!-- /.row -->
             </form>
