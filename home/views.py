@@ -25,7 +25,7 @@ def track_view(request):
     return render(request, 'track.html', context={'title': 'Track and Trace'})
 
 def track_widget(request):
-    return render(request, 'SecurityWidget.html.', context={'title': 'Dashboard'})
+    return render(request, 'SecurityWidget.html', context={'title': 'Dashboard'})
 
 def location_view(request):
     return render(request, 'location.html', context={'title': 'Location'})
