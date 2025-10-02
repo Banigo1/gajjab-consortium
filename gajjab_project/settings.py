@@ -13,10 +13,7 @@ import os
 from dotenv import load_dotenv
 from pathlib import Path
 
-
-
 load_dotenv()
-
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -43,6 +40,8 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'www.gajjabconsortium.com', 'webapp-2
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -146,3 +145,20 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+        'LOCATION': 'unique-snowflake',
+    }
+}
+
+JAZZMIN_SETTINGS = {
+'site_header': "Gajjab Consortium",
+'site_brand': "Logistics and Supply chain",
+'site_logo': "assets/imgs/theme/loading.gif",
+'copyright': "Gajjab Consortium limited",
+"site_title": " Gajjab Admin",
+"show_ui_builder": True,
+"show_sidebar": True,
+}

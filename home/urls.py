@@ -14,4 +14,4 @@ urlpatterns = [
     path('track', views.track_view, name='track'),
     path('Dashboard', views.track_widget, name='Security_Widget'),
     path('location', views.location_view, name='location'),
-]
+    ]
